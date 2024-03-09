@@ -9,6 +9,8 @@ from random import randint
 class RPSImageLoader:
     def __init__(self):
         self.load_images()
+        self.load_images1()
+        self.load_images2()
 
     def load_images(self):
         # Loading all the images 
@@ -19,6 +21,8 @@ class RPSImageLoader:
         self.image_YouDefault = ImageTk.PhotoImage(self.image_YouDefault)
         self.image_BotDefault = Image.open("Bot-Default-IMage.png").resize((200, 275))
         self.image_BotDefault = ImageTk.PhotoImage(self.image_BotDefault)
+    
+    def load_images1(self):
         self.image_RU = Image.open("r_user.png").resize((200, 275))
         self.image_RU = ImageTk.PhotoImage(self.image_RU)
         self.image_RB = Image.open("r_bot.png").resize((200, 275))
@@ -31,6 +35,8 @@ class RPSImageLoader:
         self.image_SU = ImageTk.PhotoImage(self.image_SU)
         self.image_SB = Image.open("s_bot.png").resize((200, 275))
         self.image_SB = ImageTk.PhotoImage(self.image_SB)
+    
+    def load_images2(self):
         self.image_celebrate_player = PhotoImage(file="celebration.gif")
         self.image_celebrate_bot = PhotoImage(file="celebration.gif")
         self.image_celebrate_tie = Image.open("tie.png").resize((500,100))
@@ -70,6 +76,7 @@ class RPSGame:
 
         # Setting up the user interface
         self.setup_ui()
+        self.setup_ui1()
 
     def setup_ui(self):
         # Creating a canvas for displaying the gif animation
@@ -99,6 +106,7 @@ class RPSGame:
         self.button_scissors = Button(self.window, borderwidth=0, bg="white", image=self.image_loader.image_scissors,command=lambda: self.on_button_click("scissors"))
         self.button_scissors.place(x=800, y=578)
 
+    def setup_ui1(self):
         # Initializing labels to display player and bot scores
         self.player_score_label = Label(self.window, text=str(self.player_score), font=("arial", 20, "bold"),bg="white", fg="#663399")
         self.player_score_label.place(x=280, y=498)
@@ -163,30 +171,21 @@ class RPSGame:
 
     # Checking the winner and update scores
     def winner_check(self, player_choice, bot_choice):
+        winner_message = ""
         if player_choice == bot_choice:
-            self.msg_updation("It's a tie!!")
+            winner_message = "It's a tie!!"
             self.tie_update()
-        elif player_choice == "rock":
-            if bot_choice == "paper":
-                self.msg_updation("Bot Wins")
-                self.bot_update()
+        else:
+            if (player_choice == "rock" and bot_choice == "paper") or \
+                (player_choice == "paper" and bot_choice == "scissors") or \
+                (player_choice == "scissors" and bot_choice == "rock"):
+                 winner_message = "Bot Wins"
+                 self.bot_update()
             else:
-                self.msg_updation("Player Wins")
+                winner_message = "Player Wins"
                 self.player_update()
-        elif player_choice == "paper":
-            if bot_choice == "scissors":
-                self.msg_updation("Bot Wins")
-                self.bot_update()
-            else:
-                self.msg_updation("Player Wins")
-                self.player_update()
-        elif player_choice == "scissors":
-            if bot_choice == "rock":
-                self.msg_updation("Bot Wins")
-                self.bot_update()
-            else:
-                self.msg_updation("Player Wins")
-                self.player_update()
+        self.msg_updation(winner_message)
+
 
     def bot_update(self):
         # Updating Bot Score
