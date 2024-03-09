@@ -1,7 +1,10 @@
 import unittest
-from unittest.mock import patch
 from io import StringIO
 from celebration import RPSGame
+from unittest.mock import MagicMock, patch
+import sys
+
+sys.modules['tkinter'] = MagicMock()
 
 class TestRPSGame(unittest.TestCase):
     def setUp(self):
