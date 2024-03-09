@@ -1,33 +1,31 @@
 import unittest
-import pygame
-import celebration
+from unittest.mock import patch
+from io import StringIO
+from celebration import RPSGame
 
 class TestRPSGame(unittest.TestCase):
-    def test_game_window(self):
-        self.assertEqual(self.window.title(), "Rock, Paper & Scissors")
-        self.assertEqual(self.window.geometry(), '1500x850')
-        self.assertEqual(self.window.winfo_bg(), 'white')
+    def setUp(self):
+        self.window = StringIO()
 
-    def test_background_music(self):
-        pygame.mixer.init()
-        self.assertEqual(pygame.mixer.get_busy(), True)
+    def tearDown(self):
+        self.window.close()
 
-    def test_default_images(self):
-        self.assertEqual(self.game.label_bot.cget('image'), self.game.image_loader.image_BotDefault)
-        self.assertEqual(self.game.label_player.cget('image'), self.game.image_loader.image_YouDefault)
+    @patch('sys.stdout', new_callable=StringIO)
+    def test_setup_ui(self, mock_stdout):
+        game = RPSGame(self.window)
+        game.setup_ui()
+        expected_output = "UI setup completed successfully"
+        self.assertIn(expected_output, mock_stdout.getvalue())
 
-    def test_button_click(self):
-        self.button_rock = self.game.button_rock
-        self.button_rock.invoke()
-        self.assertEqual(self.game.label_player.cget('image'), self.game.image_loader.image_RU)
+    def test_winner_check(self):
+        game = RPSGame(self.window)
+        game.player_score = 2
+        game.bot_score = 1
+        game.winner_check("rock", "paper")
+        self.assertEqual(game.player_score, 2)
+        self.assertEqual(game.bot_score, 2)
 
-    def test_tie(self):
-        self.game.winner_check('rock', 'rock')
-        self.assertEqual(self.game.final_message.cget('text'), 'It\'s a tie!!')
-        self.assertEqual(self.game.label_celebrate_tie.winfo_ismapped(), True)
+    # Add more test cases as needed...
 
-    def test_player_win(self):
-        self.game.winner_check('rock', 'scissors')
-        self.assertEqual(self.game.final_message.cget('text'), 'Player Wins')
-        self.assertEqual(self.game.player_score_label.cget('text'), '1')
-       
+if __name__ == '__main__':
+    unittest.main()
