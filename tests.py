@@ -1,17 +1,8 @@
 import unittest
 import pygame
-import tkinter as tk
 import celebration
 
 class TestRPSGame(unittest.TestCase):
-    def setUp(self):
-        self.window = tk.Tk()
-        self.game = celebration.RPSGame(self.window)
-        self.window.mainloop()
-
-    def tearDown(self):
-        self.window.destroy()
-
     def test_game_window(self):
         self.assertEqual(self.window.title(), "Rock, Paper & Scissors")
         self.assertEqual(self.window.geometry(), '1500x850')
