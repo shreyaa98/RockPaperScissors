@@ -34,10 +34,13 @@ Use the mouse to click on the buttons representing your choice of gesture (rock,
 ## Class Diagram
 The class diagram depicts the relationships and structure of classes in the Rock, Paper, Scissors game, illustrating how the RPSGame class orchestrates the game functionality while utilizing the RPSImageLoader class for image loading and Tkinter for the graphical user interface.
 
-**[Class Diagram]()**
+**[Class Diagram](https://github.com/shreyaa98/RockPaperScissors/blob/3329792940fb2a04320fd1b399642767cd64d2ee/Class%20Diagram%20Shreya.png)**
 
 ## Sequence Diagram 
 A sequence diagram illustrates the flow of interactions and events between different components or actors in a system or process, typically depicted in a diagrammatic format.
 
+**[Sequence Diagram](https://github.com/shreyaa98/RockPaperScissors/blob/3329792940fb2a04320fd1b399642767cd64d2ee/Sequence%20Diagram%20Shreya.png)**
+
 ## State Diagram
 The state diagram represents the different states and transitions of the Rock, Paper, Scissors game, illustrating the flow of actions and decisions from player input to game outcomes.
+**[State Diagram](https://github.com/shreyaa98/RockPaperScissors/blob/3329792940fb2a04320fd1b399642767cd64d2ee/State%20Diagram%20Shreya.png)**
