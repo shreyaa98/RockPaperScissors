@@ -7,7 +7,9 @@ from random import randint
 
 # Class to load all the images 
 class RPSImageLoader:
-    def __init__(self):
+
+    def __init__(self, root):
+        self.root = root
         self.load_images()
         self.load_images1()
         self.load_images2()
@@ -65,7 +67,7 @@ class RPSGame:
         self.to_select = ["rock", "paper", "scissors"]
 
         # Initializing image loader to load all images
-        self.image_loader = RPSImageLoader()
+        self.image_loader = RPSImageLoader(root=self.window)
 
         # Initializing sound effects and background music using pygame mixer
         pygame.mixer.init()
