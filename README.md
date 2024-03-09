@@ -42,5 +42,6 @@ A sequence diagram illustrates the flow of interactions and events between diffe
 **[Sequence Diagram](https://github.com/shreyaa98/RockPaperScissors/blob/3329792940fb2a04320fd1b399642767cd64d2ee/Sequence%20Diagram%20Shreya.png)**
 
 ## State Diagram
-The state diagram represents the different states and transitions of the Rock, Paper, Scissors game, illustrating the flow of actions and decisions from player input to game outcomes.
+The state diagram represents the different states and transitions of the Rock, Paper, Scissors game, illustrating the flow of actions and decisions from player input to game outcomes
+
 **[State Diagram](https://github.com/shreyaa98/RockPaperScissors/blob/3329792940fb2a04320fd1b399642767cd64d2ee/State%20Diagram%20Shreya.png)**
