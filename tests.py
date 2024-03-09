@@ -1,6 +1,6 @@
 import unittest
 import pygame
-import tkinter as tk
+import tk
 import celebration
 
 class TestRPSGame(unittest.TestCase):
