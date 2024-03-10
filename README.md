@@ -17,7 +17,7 @@ This Python program implements a simple game of Rock, Paper, Scissors (RPS) with
 Build Management and Automated TestCases are done using GitHub Actions.
 
 ## Dependencies:
-1. Python 3.x
+1. Python 3.11.5
 2. Pygame
 3. Tkinter (usually comes pre-installed with Python)
 4. PIL (Python Imaging Library)
