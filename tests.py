@@ -1,16 +1,18 @@
 import os
 
 
-if os.environ.get('DISPLAY','') == '':
+if os.environ.get('DISPLAY', '') == '':
     print('no display found. Using :0.0')
     os.environ.__setitem__('DISPLAY', ':0.0')
 
 import unittest
-from tkinter import *
+from tkinter import Button, Label, Tk
 from unittest.mock import MagicMock
-import celebration
+import celebration as celebration
+
 
 class TestRPSGame(unittest.TestCase):
+
     def setUp(self):
         self.root = Tk()  # Create a Tkinter root window
         self.game = celebration.RPSGame(self.root)
@@ -59,5 +61,7 @@ class TestRPSGame(unittest.TestCase):
         self.game.bot_update.assert_not_called()
         self.game.tie_update.assert_called()
 
+
 if __name__ == '__main__':
+
     unittest.main()
