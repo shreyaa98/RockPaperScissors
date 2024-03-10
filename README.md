@@ -24,9 +24,8 @@ Build Management and Automated TestCases are done using GitHub Actions.
 
 ## Installation
 1. Clone the repository: https://github.com/shreyaa98/RockPaperScissors.git
-2. Navigate to the project directory: cd celebration
-3. Install the required dependencies: pip install -r requirements.txt
-4. Run the game: python celebration.py
+2. Install the required dependencies: pip install -r requirements.txt
+3. Run the game: python celebration.py
 
 ## Controls
 Use the mouse to click on the buttons representing your choice of gesture (rock, paper, or scissors).
