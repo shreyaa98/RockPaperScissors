@@ -56,7 +56,7 @@ class RPSGame:
         self.window.geometry('1500x850')
 
         # Create a play button
-        self.play_button = Button(self.window, text="PLAY!",bg="#DE1884", fg="white",width=10, height=10, font=("arial", 20, "bold"), command=self.start_game)
+        self.play_button = Button(self.window, text="PLAY!", bg="#DE1884", fg="white", width=10, height=10, font=("arial", 20, "bold"), command=self.start_game)
         self.play_button.pack(side='top', padx=350, pady=350)
         self.play_button.pack()
 
