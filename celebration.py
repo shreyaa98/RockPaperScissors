@@ -99,6 +99,7 @@ class RPSGame:
         # Setting up the user interface
         self.setup_ui()
         self.setup_ui1()
+        self.setup_ui2()
 
     def setup_ui(self):
         # Creating a canvas for displaying the gif animation
@@ -119,14 +120,14 @@ class RPSGame:
         self.bot_indicator = Label(self.window, text="BOT",
                                    bg="white", fg="#DE1884",
                                    font=("arial", 20, "bold"))
-        self.bot_indicator.place(x=1075, y=160)
+        self.bot_indicator.place(x=1058, y=160)
         self.label_player = Label(self.window,
                                   image=self.image_loader.image_YouDefault)
         self.label_player.place(x=200, y=200)
         self.player_indicator = Label(self.window,
                                       text="PLAYER", bg="white", fg="#DE1884",
                                       font=("arial", 20, "bold"))
-        self.player_indicator.place(x=250, y=160)
+        self.player_indicator.place(x=233, y=160)
 
         # Initializing buttons for rock, paper, and scissors
         self.button_rock = Button(self.window, borderwidth=0, bg="white",
@@ -153,12 +154,12 @@ class RPSGame:
                                      text=str(self.bot_score),
                                      font=("arial", 20, "bold"), bg="white",
                                      fg="#663399")
-        self.bot_score_label.place(x=1100, y=498)
+        self.bot_score_label.place(x=1080, y=498)
 
         # Initializing label to display final message
         self.final_message = Label(self.window, font=("arial", 20, "bold"),
                                    bg="white", fg="#FFCC33")
-        self.final_message.place(x=625, y=550)
+        self.final_message.place(x=625, y=200)
 
         # Initializing celebration labels (hidden)
         self.label_celebrate_player = Label(self.window,
@@ -170,6 +171,25 @@ class RPSGame:
         self.label_celebrate_tie = Label(self.window,
                                          image=self.image_loader.image_celebrate_tie,
                                          bg="white")
+        
+    def setup_ui2(self):
+        # Initializing Labels to display message and rock,paper & Scissors
+        self.message = Label(self.window,
+                                      text="Click on the buttons below", bg="white", fg="#DE1884",
+                                      font=("arial", 10, "bold"))
+        self.message.place(x=625, y=550)
+        self.rock = Label(self.window,
+                                      text="Rock", bg="white", fg="#DE1884",
+                                      font=("arial", 10, "bold"))
+        self.rock.place(x=485, y=750)
+        self.paper = Label(self.window,
+                                      text="Paper", bg="white", fg="#DE1884",
+                                      font=("arial", 10, "bold"))
+        self.paper.place(x=677, y=750)
+        self.scissor = Label(self.window,
+                                      text="Scissor", bg="white", fg="#DE1884",
+                                      font=("arial", 10, "bold"))
+        self.scissor.place(x=872, y=752)
 
     def load_gif_animation(self, filename, x, y):
         # Loading and animating the gif animation
