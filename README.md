@@ -21,6 +21,7 @@ Build Management and Automated TestCases are done using GitHub Actions.
 2. Pygame
 3. Tkinter (usually comes pre-installed with Python)
 4. PIL (Python Imaging Library)
+5. flake8 (For Python Style Checks)
 
 ## Installation
 1. Clone the repository: https://github.com/shreyaa98/RockPaperScissors.git
