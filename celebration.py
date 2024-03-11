@@ -55,6 +55,18 @@ class RPSGame:
         self.window.configure(background="white")
         self.window.geometry('1500x850')
 
+        # Create a play button
+        self.play_button = Button(self.window, text="PLAY!",bg="#DE1884", fg="white",width=10, height=10, font=("arial", 20, "bold"), command=self.start_game)
+        self.play_button.pack(side='top', padx=350, pady=350)
+        self.play_button.pack()
+
+        # Initialize game components (not visible initially)
+        self.label_player = None
+        self.label_bot = None
+        self.button_rock = None
+        self.button_paper = None
+        self.button_scissors = None
+
         # Initializing pygame for sound effects and background music
         pygame.init()
 
@@ -79,6 +91,10 @@ class RPSGame:
         self.sound_player_win = pygame.mixer.Sound("you_win.wav")
         self.sound_bot_win = pygame.mixer.Sound("bot_win.wav")
         self.background_music = pygame.mixer.Sound("bg_music.mp3")
+
+    def start_game(self):
+        # Remove the play button
+        self.play_button.pack_forget()
 
         # Setting up the user interface
         self.setup_ui()
