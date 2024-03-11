@@ -8,6 +8,7 @@ from random import randint
 # Class to load all the images
 class RPSImageLoader:
 
+    # Initializing object by loading images using three different methods
     def __init__(self):
         self.load_images()
         self.load_images1()
@@ -171,24 +172,16 @@ class RPSGame:
         self.label_celebrate_tie = Label(self.window,
                                          image=self.image_loader.image_celebrate_tie,
                                          bg="white")
-        
+
     def setup_ui2(self):
         # Initializing Labels to display message and rock,paper & Scissors
-        self.message = Label(self.window,
-                                      text="Click on the buttons below", bg="white", fg="#DE1884",
-                                      font=("arial", 10, "bold"))
+        self.message = Label(self.window, text="Click on the buttons below", bg="white", fg="#DE1884", font=("arial", 10, "bold"))
         self.message.place(x=625, y=550)
-        self.rock = Label(self.window,
-                                      text="Rock", bg="white", fg="#DE1884",
-                                      font=("arial", 10, "bold"))
+        self.rock = Label(self.window, text="Rock", bg="white", fg="#DE1884", font=("arial", 10, "bold"))
         self.rock.place(x=485, y=750)
-        self.paper = Label(self.window,
-                                      text="Paper", bg="white", fg="#DE1884",
-                                      font=("arial", 10, "bold"))
+        self.paper = Label(self.window, text="Paper", bg="white", fg="#DE1884", font=("arial", 10, "bold"))
         self.paper.place(x=677, y=750)
-        self.scissor = Label(self.window,
-                                      text="Scissor", bg="white", fg="#DE1884",
-                                      font=("arial", 10, "bold"))
+        self.scissor = Label(self.window, text="Scissor", bg="white", fg="#DE1884", font=("arial", 10, "bold"))
         self.scissor.place(x=872, y=752)
 
     def load_gif_animation(self, filename, x, y):
