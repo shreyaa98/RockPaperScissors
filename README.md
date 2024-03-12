@@ -14,7 +14,7 @@ This Python program implements a simple game of Rock, Paper, Scissors (RPS) with
 10. Customizable Assets: Allows images, sounds, and animation customization.
 
 ## Files
-1. rock_paper_scissors.py contains the main code for the game.
+1. RPS_Main.py contains the main code for the game.
 2. rock.png, paper.png, and scissors.png are images representing the rock, paper, and scissors icons used in the game.
 3. You-Default-IMage.png and Bot-Default-IMage.png are the default images for the player and the bot.
 4. r_user.png, r_bot.png, p_user.png, p_bot.png, s_user.png, s_bot.png: Images representing different gestures of the player and the bot (rock, paper, scissors).
