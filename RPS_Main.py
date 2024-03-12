@@ -75,7 +75,7 @@ class RPSGame:
         self.screen = pygame.display.set_mode((1500, 850))
 
         # Loading Backgroud animation
-        self.background_animation = pygame.image.load("design_combine(2).gif")
+        self.background_animation = pygame.image.load("bg.gif")
         self.background_animation.convert()
 
         # Initializing player and bot scores
