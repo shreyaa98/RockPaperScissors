@@ -108,7 +108,7 @@ class RPSGame:
         self.canvas.place(x=10, y=10)
 
         # Loading and displaying the gif animation
-        self.load_gif_animation("design_combine(2).gif", 0, 0)
+        self.load_gif_animation("bg.gif", 0, 0)
 
         # Background music
         self.background_music.play(loops=-1)  # Play infinitely (-1)
