@@ -13,6 +13,16 @@ This Python program implements a simple game of Rock, Paper, Scissors (RPS) with
 9. Error Handling: Includes basic error handling for smooth execution.
 10. Customizable Assets: Allows images, sounds, and animation customization.
 
+## Files
+1. RPS_Main.py contains the main code for the game.
+2. rock.png, paper.png, and scissors.png are images representing the rock, paper, and scissors icons used in the game.
+3. You-Default-IMage.png and Bot-Default-IMage.png are the default images for the player and the bot.
+4. r_user.png, r_bot.png, p_user.png, p_bot.png, s_user.png, s_bot.png: Images representing different gestures of the player and the bot (rock, paper, scissors).
+5. celebration.gif animation file for celebration.
+6. tie.png indicating a tie.
+7. click.wav, you_win.wav, bot_win.wav, bg_music.mp3: Sound files used in the game for various actions.
+8. bg.gif: Background animation
+
 ## Technical Aspects
 Build Management and Automated TestCases are done using GitHub Actions.
 
@@ -28,8 +38,14 @@ Build Management and Automated TestCases are done using GitHub Actions.
 2. Install the required dependencies: pip install -r requirements.txt
 3. Run the game: python celebration.py
 
-## Controls
-Use the mouse to click on the buttons representing your choice of gesture (rock, paper, or scissors).
+## Instructions to Play the Game 
+1. Run the script.
+2. Click on the "PLAY!" button to start the game.
+3. Choose Rock, Paper, or Scissors by clicking the corresponding button.
+4. The computer will randomly select its choice.
+5. The winner is determined based on the rules: Rock beats Scissors, Scissors beats Paper, Paper beats Rock.
+6. See the outcome of the game and the updated scores.
+7. Enjoy the game!
 
 ## Class Diagram
 The class diagram depicts the relationships and structure of classes in the Rock, Paper, Scissors game, illustrating how the RPSGame class orchestrates the game functionality while utilizing the RPSImageLoader class for image loading and Tkinter for the graphical user interface.
@@ -45,3 +61,7 @@ A sequence diagram illustrates the flow of interactions and events between diffe
 The state diagram represents the different states and transitions of the Rock, Paper, Scissors game, illustrating the flow of actions and decisions from player input to game outcomes
 
 **[State Diagram](https://github.com/shreyaa98/RockPaperScissors/blob/3329792940fb2a04320fd1b399642767cd64d2ee/State%20Diagram%20Shreya.png)**
+
+## Note:
+1. Ensure that all dependencies are installed properly to run the game without errors.
+2. Ignore the Pygame window 
