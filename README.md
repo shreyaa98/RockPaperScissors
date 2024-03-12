@@ -64,4 +64,18 @@ The state diagram represents the different states and transitions of the Rock, P
 
 ## Note
 1. Ensure that all dependencies are installed properly to run the game without errors.
-2. Ignore the Pygame window 
+2. Ignore the Pygame window
+
+## Conclusion
+Enjoy the classic Rock, Paper & Scissors game with this simple yet engaging Python implementation! Whether you're playing against the bot or challenging friends, it's a fun way to pass the time and test your strategy. Hope you have fun playing!  I'm still working on the details, so feel free to point out any errors or bugs.
+
+## License
+
+This project is privately owned by Shreyaasri Prakash, a student at SRH Berlin University of Applied Sciences pursuing an MSc in Computer Science, Focused on Big Data and Artificial Intelligence.
+
+Contact Information:
+
+Name: Shreyaasri Prakash
+
+Email: shreyaa.prakash2015@gmail.com
+
