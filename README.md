@@ -55,12 +55,12 @@ The class diagram depicts the relationships and structure of classes in the Rock
 ## Sequence Diagram 
 A sequence diagram illustrates the flow of interactions and events between different components or actors in a system or process, typically depicted in a diagrammatic format.
 
-**[Sequence Diagram](https://github.com/shreyaa98/RockPaperScissors/blob/3329792940fb2a04320fd1b399642767cd64d2ee/Sequence%20Diagram%20Shreya.png)**
+**[Sequence Diagram](https://github.com/shreyaa98/RockPaperScissors/blob/c836326a769c10e7837b2b38915ba46a939cd491/Diagrams/Sequence%20Diagram.png)**
 
 ## State Diagram
 The state diagram represents the different states and transitions of the Rock, Paper, Scissors game, illustrating the flow of actions and decisions from player input to game outcomes
 
-**[State Diagram](https://github.com/shreyaa98/RockPaperScissors/blob/3329792940fb2a04320fd1b399642767cd64d2ee/State%20Diagram%20Shreya.png)**
+**[State Diagram](https://github.com/shreyaa98/RockPaperScissors/blob/c836326a769c10e7837b2b38915ba46a939cd491/Diagrams/State%20Diagram.png)**
 
 ## Note
 1. Ensure that all dependencies are installed properly to run the game without errors.
