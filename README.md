@@ -50,7 +50,7 @@ Build Management and Automated TestCases are done using GitHub Actions.
 ## Class Diagram
 The class diagram depicts the relationships and structure of classes in the Rock, Paper, Scissors game, illustrating how the RPSGame class orchestrates the game functionality while utilizing the RPSImageLoader class for image loading and Tkinter for the graphical user interface.
 
-**[Class Diagram](https://github.com/shreyaa98/RockPaperScissors/blob/3329792940fb2a04320fd1b399642767cd64d2ee/Class%20Diagram%20Shreya.png)**
+**[Class Diagram](https://github.com/shreyaa98/RockPaperScissors/blob/a24a95ce156ae3315a24c6a3d8578983960c4c14/Diagrams/Class%20Diagram.png)**
 
 ## Sequence Diagram 
 A sequence diagram illustrates the flow of interactions and events between different components or actors in a system or process, typically depicted in a diagrammatic format.
@@ -62,6 +62,6 @@ The state diagram represents the different states and transitions of the Rock, P
 
 **[State Diagram](https://github.com/shreyaa98/RockPaperScissors/blob/3329792940fb2a04320fd1b399642767cd64d2ee/State%20Diagram%20Shreya.png)**
 
-## Note:
+## Note
 1. Ensure that all dependencies are installed properly to run the game without errors.
 2. Ignore the Pygame window 
