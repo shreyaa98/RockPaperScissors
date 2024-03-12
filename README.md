@@ -36,7 +36,7 @@ Build Management and Automated TestCases are done using GitHub Actions.
 ## Installation
 1. Clone the repository: https://github.com/shreyaa98/RockPaperScissors.git
 2. Install the required dependencies: pip install -r requirements.txt
-3. Run the game: python celebration.py
+3. Run the game: RPS_Main.py
 
 ## Instructions to Play the Game 
 1. Run the script.
