@@ -8,7 +8,7 @@ if os.environ.get('DISPLAY', '') == '':
 import unittest
 from tkinter import Button, Label, Tk
 from unittest.mock import MagicMock
-import celebration as celebration
+import RPS_Main as celebration
 
 
 class TestRPSGame(unittest.TestCase):
