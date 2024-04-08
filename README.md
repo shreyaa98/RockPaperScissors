@@ -79,3 +79,10 @@ Name: Shreyaasri Prakash
 
 Email: shreyaa.prakash2015@gmail.com
 
+## References 
+
+1. Using GUI(Tkinter) : https://www.youtube.com/live/xiYNnUhwfNI?si=EigVMxIqpnT5E59D
+2. Python code: None
+3. Music: 
+4. Images: 
+
